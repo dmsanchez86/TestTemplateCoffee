@@ -1,0 +1,237 @@
+*{
+	border:0;
+	margin: 0;
+	padding:0;
+}
+
+@font-face{
+	font-family: "andika";
+	src: url("fuentes/andika.woff");
+}
+
+@font-face{
+	font-family: "komika";
+	src: url("fuentes/komika.woff");
+}
+
+body{
+	background: url(imagenes/bodybkg.gif);
+	font-family: "andika","komika",Helvetica;
+}
+
+a{
+	color: white;
+	display: block;
+	font-family: "andika";
+	font-weight: bold;
+	font-size: 10px;
+	padding: .25em .5em;
+	text-decoration: none;
+}
+a:hover{
+	color: #A08A5A;
+}
+
+header{
+	color: #C4AC5B;
+	font-family: "komika";
+	font-style: italic;
+	font-weight: bold;
+	margin: .25em auto;
+	max-width: 90%;
+	text-shadow: 1px 1px 0 black;
+	width: 100%;
+}
+
+nav, footer{
+	background: #080808;
+	color: white;
+	margin: .25em auto;
+	max-width: 90%;
+	width: 100%;
+}
+nav ul li{
+	display: inline-block;
+	margin: 0 1em .25em 1.5em;
+}
+
+nav ul li a{
+	padding-top: 0;
+	padding-bottom: .5em;
+	transition: all 200ms ease;
+}
+
+section#contenedor{
+	margin: 0 auto;
+	max-width: 90%;
+}
+
+section#main{
+	margin: 0 auto;
+	max-width: 100%;
+	width: 1024px;
+}
+
+section#articulo1{
+	background: -webkit-linear-gradient(top, rgb(136, 117, 103), #635042, #413125);
+	background: -moz-linear-gradient(top, rgb(136, 117, 103), #635042, #413125);
+	background: linear-gradient(top, rgb(136, 117, 103), #635042, #413125);
+	display: block;
+	margin: .5em auto;
+	max-width: 100%;
+	width: 100%;
+	z-index: 2;
+	padding: .5rem 0 1rem;
+}
+section#articulo1 div{
+	background: url(imagenes/introimage.png);
+	background-repeat: no-repeat;
+	background-position: 99% 46%;
+	background-size: 14%;
+	height: 100%;
+}
+section#articulo1 article{
+	padding: 1em 2em .5em;
+	max-width: 60%;
+	width: 100%;
+}
+section#articulo1 h3{
+	color: #fefefe;
+	font-family: "komika";
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: .5rem;
+}
+section#articulo1 p{
+	color: #B79C6A;
+	font-size: 14px;
+	text-align: justify;
+	line-height: 1.1;
+}
+section#articulo2{
+	background: white;
+	text-align: center;
+}
+section#articulo2 article{
+	border-radius: 5px;
+	display: inline-block;
+	margin: .25em 0 .25em .35em;
+	padding: .5em 1.1em .5em .5em;
+	max-width: 30%;
+	min-height: 300px;
+	vertical-align: top;
+	text-align: justify;
+	width: 100%;
+	box-sizing: border-box;
+}
+section#articulo2 article p{
+	font-size: .7em;
+	color: #494949;
+	text-align: justify;
+}
+section#articulo2 article h5{
+	color: white;
+	font-family: "komika";
+	font-size: .9em;
+}
+section#articulo2,aside{
+	display: inline-block;
+	max-width: 70%;
+	vertical-align: top;
+	width: 100%;
+}
+aside article{
+	margin-bottom: .25em;
+}
+aside article, section#articulo2 article{
+	background: #B79C6A;
+}
+aside{
+	width: 25%;
+	margin: 10px 14px;
+}
+aside article h4{
+	font-size: .7em;
+	font-weight: bold;
+	padding: .5em 0 0 1.4em;
+}
+aside article ul{
+	color: #C9C2AB;
+	padding: 0 0 .5em 30px;
+	font-size: .7em;
+	list-style: disc;
+}
+img{
+	border: 8px solid white;
+	margin: 0 auto .5rem;
+	max-width: 90%;
+	display: block;
+}
+footer{
+	text-align: center;
+	font-family: "komika";
+	font-size: .6em;
+	padding: .75em 0;
+}
+
+footer a{
+	display: inline;
+	transition: all 100ms ease;
+}
+
+.radial{
+	border-radius: 5px;
+}
+
+.radial h1{
+	font-size: 2em;
+}
+
+@media (max-width: 800px) {
+	header, footer, #contenedor, nav{
+		max-width: 95% !important;
+	}
+
+	section#articulo2 article{
+		max-width: 46%;
+	}
+
+	aside{
+		width: 24%;
+	}
+
+	section#articulo1 div {
+    background-size: 22%;
+	}
+}
+
+@media (max-width: 600px) {
+	section#articulo2 article{
+		max-width: 90%;
+	}
+
+	aside{
+		width: 33%;
+	}
+
+	section#articulo2{
+		width: 60%;
+	}
+
+	section#articulo1 article {
+			padding: .51em 1em 0em;
+	}
+
+	section#articulo1 div {
+			background-size: 30%;
+	}
+}
+
+@media (max-width: 510px) {
+	aside,section#articulo2 {
+			width: 100%;
+			max-width: 100%;
+			margin-left: 0;
+    	margin-right: 0;
+	}
+}
